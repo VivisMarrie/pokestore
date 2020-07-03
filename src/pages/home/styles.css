@@ -1,0 +1,61 @@
+.grass {
+    border-color: aquamarine !important;
+    border-width: 0.8em !important;
+    background: rgb(46,113,0);
+    background: linear-gradient(0deg, rgba(46,113,0,1) 0%, rgba(0,255,89,1) 100%);
+}
+.grass :hover{
+    border-color: aquamarine !important;
+    border-width: 0.8em;
+    background: rgb(46,113,0);
+    background: linear-gradient(0deg, rgba(46,113,0,1) 0%, rgba(0,255,89,1) 100%);
+}
+
+.fire {
+    border-color: orange !important;
+    border-width: 0.8em !important;
+}
+.fire :hover{
+    border-color: orange;
+    border-width: 0.8em;
+}
+
+.water {
+    border-color: blue !important;
+    border-width: 0.8em !important;
+}
+.water :hover{
+    border-color: orange;
+    border-width: 0.8em;
+}
+
+.electric,
+.ice,
+.fighting,
+.poison,
+.ground,
+.flying,
+.psychic,
+.bug,
+.rock,
+.dragon,
+.ghost,
+.dark,
+.steel,
+.normal,
+.fairy {
+    border-color: blue !important;
+    border-width: 0.8em !important;
+}
+
+.icons-right{ 
+    position: fixed; 
+    bottom: 0px;
+     right: 8px 
+}
+
+.cart{ 
+    position: fixed; 
+    top: 100px;
+    right: 8px 
+}

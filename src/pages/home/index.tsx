@@ -176,7 +176,7 @@ const Home = () => {
                 console.error(Error);
             });
         }
-    },[searchValue, activePage, typeSearch]);
+    },[searchValue, activePage, typeSearch]); // eslint-disable-line
 
     const handlePageChange = (pageNumber:number) => {
         setActivePage(pageNumber);
@@ -203,6 +203,7 @@ const Home = () => {
                 pokevalue.qtd++;
                 pokevalue.total = ( pokevalue.pokemon.stats[0].base_stat * pokevalue.qtd);
             }
+            return pokevalue;
         })    
         if(newItem) pokevalues.push({pokemon, qtd: 1, total: pokemon.stats[0].base_stat});
         const total:number = pokevalues.reduce((prev, cur) => {return prev + cur.total}, 0);
@@ -300,15 +301,16 @@ const Home = () => {
                                         
                                     <Card.Img className="pr-1 pl-1" variant="top" src={`https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`} />
                                     <Card.Body className='py-0 px-1'>
+                                       
                                         <Card.Text>
+                                        <span  className="float-left">
                                             {
                                                 pokemon.stats.map(stat => (
                                                     <Badge key={stat.stat.name} className={stat.stat.name}><span>{stat.stat.name}: {stat.base_stat}</span></Badge>
                                                 ))
                                             }
-                                        </Card.Text >      
-                                        <Card.Text>                              
-                                        <span className="float-left">R$ {pokemon.stats[0].base_stat}</span>
+                                        </span>                         
+                                        <span className="float-left pt-3">R$ {pokemon.stats[0].base_stat}</span>
                                         <span className="float-right my-1 cart-add"><Button className="py-1 px-2"><MdAddShoppingCart size={20}/></Button></span>
                                         </Card.Text > 
                                         <a id="cardlink-{pokemon.id}" href="/" onClick={(event) => addToCart(event, pokemon)} className="stretched-link">{null}</a>
@@ -340,8 +342,8 @@ const Home = () => {
                 onHide={handleClose}
                 >
                 <Modal.Body className="text-center">
-                <h2 >Parabéns</h2>  
-                <h4 >Compra Realizada</h4>  
+                <h1 >Parabéns</h1>  
+                <h3 >Compra Realizada</h3>  
                      
                 </Modal.Body>    
                 </Modal>

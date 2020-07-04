@@ -11,8 +11,6 @@ import {FaSearch} from 'react-icons/fa';
 import logo from '../../images/pokeball.png';
 import text from '../../images/logo.png';
 import eevees from '../../images/eevees.png';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 interface Props {
     setSearchValue: ((searchValue: string) => void),

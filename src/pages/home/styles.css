@@ -1,51 +1,248 @@
-.grass {
-    border-color: aquamarine !important;
-    border-width: 0.8em !important;
-    background: rgb(46,113,0);
-    background: linear-gradient(0deg, rgba(46,113,0,1) 0%, rgba(0,255,89,1) 100%);
-}
-.grass :hover{
-    border-color: aquamarine !important;
-    border-width: 0.8em;
-    background: rgb(46,113,0);
-    background: linear-gradient(0deg, rgba(46,113,0,1) 0%, rgba(0,255,89,1) 100%);
+.pokecard {
+    border-width: 0.7em !important;
 }
 
 .fire {
-    border-color: orange !important;
-    border-width: 0.8em !important;
+    border-color: #f9a824 !important;
 }
-.fire :hover{
-    border-color: orange;
-    border-width: 0.8em;
+.fire:hover{
+    border-color: #f27e31ff !important;
 }
-
 .water {
-    border-color: blue !important;
-    border-width: 0.8em !important;
+    border-color: #5aa6daff !important;
 }
-.water :hover{
-    border-color: orange;
-    border-width: 0.8em;
+.water:hover{
+    border-color: rgb(58, 147, 206) !important;
+}
+.electric { 
+    border-color: #f3d64cff !important;
+}
+.electric:hover{
+    border-color: rgb(230, 192, 41) !important;
+}
+.grass {
+    border-color: rgb(104, 206, 91) !important;
+    /*background: rgb(46,113,0);
+    background: linear-gradient(0deg, rgba(46,113,0,1) 0%, rgba(0,255,89,1) 100%);*/
+}
+.grass:hover{
+    border-color: rgb(84, 189, 23) !important;
+}
+.ice {
+    border-color: #8dddd4ff !important;
+}
+.ice:hover{
+    border-color: #98d7dcff !important;
+}
+.fighting {
+    border-color: rgb(230, 70, 78) !important;
+}
+.fighting:hover{
+    border-color: #C62C2Cff !important;
+}
+.poison {
+    border-color: #B964CCff !important;
+}
+.poison:hover{
+    border-color: #AC4CAEff !important;
+}
+.ground {
+    border-color: rgb(224, 126, 76) !important;
+}
+.ground:hover{
+    border-color: rgb(202, 106, 58) !important;
+}
+.flying {
+    border-color: #8FAFDEff !important;
+}
+.flying:hover{
+    border-color: #A38CF4ff !important;
+}
+.psychic {
+    border-color: #F48278ff !important;
+}
+.psychic:hover{
+    border-color: #FC5686ff !important;
+}
+.bug {
+    border-color: #97C42Dff !important;
+}
+.bug:hover{
+    border-color: rgb(133, 173, 39) !important;
+}
+.rock {
+    border-color: #D5BF86ff !important;
+}
+.rock:hover{
+    border-color: #B8A036ff !important;
+}
+.dragon {
+    border-color: #0B6CBDff !important;
+}
+.dragon:hover{
+    border-color: #793FFFff !important;
+}
+.ghost {
+    border-color: #686EC6ff !important;
+}
+.ghost:hover{
+    border-color: #725A96ff !important;
+}
+.dark {
+    border-color: #625E6Fff !important;
+}
+.dark:hover{
+    border-color: #735C4Cff !important;
+}
+.steel {
+    border-color: #579CA1ff !important;
+}
+.steel:hover{
+    border-color: rgb(170, 170, 196) !important;
+}
+.normal {
+    border-color: rgb(161, 168, 179) !important;
+}
+.normal:hover{
+    border-color: rgb(132, 138, 148) !important;
+}
+.fairy {
+    border-color: #F090E9ff !important;
+}
+.fairy:hover{
+    border-color: rgb(243, 105, 234) !important;
 }
 
-.electric,
-.ice,
-.fighting,
-.poison,
-.ground,
-.flying,
-.psychic,
-.bug,
-.rock,
-.dragon,
-.ghost,
-.dark,
-.steel,
-.normal,
-.fairy {
-    border-color: blue !important;
-    border-width: 0.8em !important;
+a > .badge {
+    color: black;
+}
+.badge.fire {
+    background-color: #f9a824 !important;
+
+}
+.badge.fire:hover, .badge.fire.active{
+    background-color: #f27e31ff !important;
+}
+.badge.water {
+    background-color: #5aa6daff !important;
+}
+.badge.water:hover, .badge.water.active{
+    background-color: rgb(58, 147, 206) !important;
+}
+.badge.electric { 
+    background-color: #f3d64cff !important;
+}
+.badge.electric:hover, .badge.electric.active{
+    background-color: rgb(230, 192, 41) !important;
+}
+.badge.grass {
+    background-color: rgb(104, 206, 91) !important;
+}
+.badge.grass:hover, .badge.grass.active{
+    background-color: rgb(84, 189, 23) !important;
+}
+.badge.ice {
+    background-color: #8dddd4ff !important;
+}
+.badge.ice:hover, .badge.ice.active{
+    background-color: #98d7dcff !important;
+}
+.badge.fighting {
+    background-color: rgb(230, 70, 78) !important;
+}
+.badge.fighting:hover, .badge.fighting.active{
+    background-color: #C62C2Cff !important;
+}
+.badge.poison {
+    background-color: #B964CCff !important;
+}
+.badge.poison:hover, .badge.poison.active{
+    background-color: #AC4CAEff !important;
+}
+.badge.ground {
+    background-color: rgb(224, 126, 76) !important;
+}
+.badge.ground:hover, .badge.ground.active{
+    background-color: rgb(202, 106, 58) !important;
+}
+.badge.flying {
+    background-color: #8FAFDEff !important;
+}
+.badge.flying:hover, .badge.flying.active{
+    background-color: #A38CF4ff !important;
+}
+.badge.psychic {
+    background-color: #F48278ff !important;
+}
+.badge.psychic:hover, .badge.psychic.active{
+    background-color: #FC5686ff !important;
+}
+.badge.bug {
+    background-color: #97C42Dff !important;
+}
+.badge.bug:hover, .badge.bug.active{
+    background-color: rgb(133, 173, 39) !important;
+}
+.badge.rock {
+    background-color: #D5BF86ff !important;
+}
+.badge.rock:hover, .badge.rock.active{
+    background-color: #B8A036ff !important;
+}
+.badge.dragon {
+    background-color: #0B6CBDff !important;
+}
+.badge.dragon:hover, .badge.dragon.active{
+    background-color: #793FFFff !important;
+}
+.badge.ghost {
+    background-color: #686EC6ff !important;
+}
+.badge.ghost:hover, .badge.ghost.active{
+    background-color: #725A96ff !important;
+}
+.badge.dark {
+    background-color: #625E6Fff !important;
+}
+.badge.dark:hover, .badge.dark.active{
+    background-color: #735C4Cff !important;
+}
+.badge.steel {
+    background-color: #579CA1ff !important;
+}
+.badge.steel:hover, .badge.steel.active{
+    background-color: rgb(170, 170, 196) !important;
+}
+.badge.normal {
+    background-color: rgb(161, 168, 179) !important;
+}
+.badge.normal:hover, .badge.normal.active{
+    background-color: rgb(132, 138, 148) !important;
+}
+.badge.fairy {
+    background-color: #F090E9ff !important;
+}
+.badge.fairy:hover, .badge.fairy.active{
+    background-color: rgb(243, 105, 234) !important;
+}
+
+.hp {
+    background-color: rgb(238, 46, 46) !important;
+}
+.attack{
+    background-color: rgb(255, 136, 0) !important;
+}
+.defense{
+    background-color: rgb(0, 214, 107) !important;
+}
+.special-attack{
+    background-color: rgb(255, 208, 0) !important;
+}
+.special-defense{
+    background-color: rgb(72, 255, 0) !important;
+}
+.speed{
+    background-color: rgb(0, 174, 255) !important;
 }
 
 .icons-right{ 
@@ -57,5 +254,27 @@
 .cart{ 
     position: fixed; 
     top: 100px;
-    right: 8px 
+    right: 8px;
+    min-width: 17em;
+}
+
+.card .cart-add {
+    visibility: hidden;
+}
+
+.card:hover .cart-add{
+    visibility: visible;
+} 
+
+.card {
+    font-family: 'Dosis', sans-serif;
+
+
+
+}
+
+.types{ 
+    position: fixed; 
+    top: 100px;
+    left: 8px 
 }
